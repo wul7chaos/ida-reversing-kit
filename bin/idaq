@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# idaq launcher — 从仓库布局运行 src/idaq.py
+# 可安全地 symlink 到任意位置（用 readlink -f 解析真实路径）。
+set -euo pipefail
+SELF="$(readlink -f "${BASH_SOURCE[0]}")"
+DIR="$(dirname "$SELF")"
+REPO="$(dirname "$DIR")"
+exec python3 "$REPO/src/idaq.py" "$@"

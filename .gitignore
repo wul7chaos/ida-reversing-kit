@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDA 产物（分析与测试遗留）
+*.i64
+*.id0
+*.id1
+*.id2
+*.idb
+*.nam
+*.til
+*.asm
+*.lst
+*.sig
+*.pat
+
+# 编辑器 / 系统
+.DS_Store
+.idea/
+.vscode/
+*.swp
